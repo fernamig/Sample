@@ -1,0 +1,12 @@
+{
+	"data": {
+      "id": "2",
+      "type": "meal-plans",
+      "attributes": {
+        "mealPlan": "Orange Cash",
+        "balance": 123.55,
+        "lastUsedDate": "01/01/2018 12:00:00",
+        "lastUsedPlace": "TOGO"
+      }
+	}
+}
