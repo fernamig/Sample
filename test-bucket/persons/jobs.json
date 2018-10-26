@@ -1,0 +1,50 @@
+{
+  "links": {},
+  "data": [
+    @foreach (var job in Model)
+    {
+      <text>
+      {
+        "id": null,
+        "type": "jobs",
+        "attributes": {
+          "positionNumber": "@job.positionNumber",
+          "suffix": "@job.suffix",
+          "beginDate": @AsString(job.beginDate),
+          "endDate": @AsString(job.endDate),
+          "locationID": @AsString(job.locationID),
+          "status": @AsString(job.status),
+          "description": @AsString(job.description),
+          "fullTimeEquivalency": @job.fullTimeEquivalency,
+          "appointmentPercent": @job.appointmentPercent,
+          "supervisorOsuID": @AsString(job.supervisorOsuID),
+          "supervisorPositionNumber": @AsString(job.supervisorPositionNumber),
+          "supervisorSuffix": @AsString(job.supervisorSuffix),
+          "timesheetOrganizationCode": @AsString(job.timesheetOrganizationCode),
+          "hourlyRate": @job.hourlyRate,
+          "hoursPerPay": @job.hoursPerPay,
+          "assignmentSalary": @job.assignmentSalary,
+          "paysPerYear": @job.paysPerYear,
+          "annualSalary": @job.annualSalary,
+          "laborDistribution": [
+            @foreach (var dist in job.laborDistribution)
+            {
+              <text>
+              {
+                "accountIndexCode": @AsString(dist.accountIndexCode),
+                "accountCode": @AsString(dist.accountCode),
+                "activityCode": @AsString(dist.activityCode),
+                "distributionPercent": @dist.distributionPercent
+              },
+              </text>
+            }
+          ]
+        },
+        "links": {
+          "self": "https://api.oregonstate.edu/v1/persons/@job.id/jobs?positionNumber=@job.positionNumber&suffix=@job.suffix"
+        }
+      },
+      </text>
+    }
+  ]
+}

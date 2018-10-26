@@ -1,0 +1,11 @@
+{
+  "data": {
+    "id": "@Model.id",
+    "type": "preferences",
+    @{ Model.Remove("id"); Model.Remove("index"); }
+    "data": @AsJson(Model),
+    "links": {
+      "self": "https://api.oregonstate.edu/v1/preferences"
+    }
+  }
+}

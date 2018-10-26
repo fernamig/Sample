@@ -1,0 +1,20 @@
+{
+  "Category1": {
+    "Pref1": "value1",
+    "Pref2": "value2",
+    "Pref3": "value3",
+    "Pref4": "value4",
+  },
+  "Category2": {
+    "Pref1": "value1",
+    "Pref2": "value2",
+    "Pref3": "value3",
+    "Pref4": "value4",
+  },
+  "Category3": {
+    "Pref1": "value1",
+    "Pref2": "value2",
+    "Pref3": "value3",
+    "Pref4": "value4",
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "positionNumber": "C12345",
+  "suffix": "00",
+  "beginDate": "2000-01-01",
+  "endDate": null,
+  "locationID": "02A",
+  "status": "Active",
+  "description": "Analyst Programmer",
+  "fullTimeEquivalency": 1,
+  "appointmentPercent": 100,
+  "supervisorOsuID": "999990310",
+  "supervisorPositionNumber": "C10996",
+  "supervisorSuffix": "00",
+  "timesheetOrganizationCode": "121200",
+  "hourlyRate": 21.1,
+  "hoursPerPay": 173.33,
+  "assignmentSalary": 1000,
+  "paysPerYear": 12,
+  "annualSalary": 57000,
+  "laborDistribution": [
+    {
+      "accountIndexCode": "JIS096",
+      "accountCode": "10301",
+      "activityCode": null,
+      "distributionPercent": 100
+    }
+  ]
+}

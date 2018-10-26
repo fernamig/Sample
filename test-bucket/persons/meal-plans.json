@@ -1,0 +1,21 @@
+{
+  "links": {},
+  "data": [
+    @foreach (var plan in Model)
+    {
+      <text>
+      {
+        "id": "@plan.index",
+        "type": "meal-plans",
+        "attributes": {
+          "mealPlan": @AsString(plan.mealPlan),
+          "balance": @plan.balance,
+          "lastUsedDate": @AsString(plan.lastUsedDate),
+          "lastUsedPlace": @AsString(plan.lastUsedPlace)
+        },
+        "links": { "self": "https://api.oregonstate.edu/v1/persons/@plan.id/meal-plans/@plan.index" }
+      },
+      </text>
+    }
+  ]
+}

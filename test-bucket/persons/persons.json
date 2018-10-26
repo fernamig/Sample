@@ -1,0 +1,26 @@
+{
+  "data": {
+    "id": "@Model.id",
+    "type": "person",
+    "attributes": {
+      "birthDate": @AsString(Model.birthDate),
+      "firstName": @AsString(Model.firstName),
+      "middleName": @AsString(Model.middleName),
+      "lastName": @AsString(Model.lastName),
+      "previousRecords": [],
+      "homePhone": @AsString(Model.homePhone),
+      "alternatePhone": @AsString(Model.alternatePhone),
+      "osuUID": "@Model.osuUID",
+      "primaryPhone": @AsString(Model.primaryPhone),
+      "mobilePhone": @AsString(Model.mobilePhone),
+      "currentStudent": @AsBool(Model.currentStudent),
+      "currentEmployee": @AsBool(Model.currentEmployee),
+      "email": @AsString(Model.email),
+      "username": @AsString(Model.username),
+      "confidential": @AsBool(Model.confidential)
+    },
+    "links": {
+      "self": "https://api.oregonstate.edu/v1/persons/@Model.id"
+    }
+  }
+}

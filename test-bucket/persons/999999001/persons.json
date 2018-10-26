@@ -1,0 +1,17 @@
+{
+  "birthDate": "1980-01-01",
+  "firstName": "Sample",
+  "middleName": null,
+  "lastName": "Sample",
+  "previousRecords": [],
+  "homePhone": null,
+  "alternatePhone": null,
+  "osuUID": "99999998001",
+  "primaryPhone": null,
+  "mobilePhone": null,
+  "currentStudent": false,
+  "currentEmployee": true,
+  "email": "sample@oregonstate.edu",
+  "username": "sample",
+  "confidential": false
+}

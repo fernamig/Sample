@@ -1,0 +1,9 @@
+{
+  "links": {},
+  "data": {
+    @foreach(var obj in Model)
+    {
+      if (obj.Value.data is JObject)       {         @:"@obj.Key": @AsJson(obj.Value.data),       }
+      else if (obj.Value.data is JArray)       {         @:"@obj.Key": [           foreach(var child in obj.Value.data)           {             @:@AsJson(child),           }         @:],       }     }
+  }
+}
